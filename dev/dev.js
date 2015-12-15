@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import {FBComments, FBCommentsCount, FBEmbedPost, FBEmbedVideo, FBLike, FBSend, FBShare} from '../src/index';
+import {FBComments, FBCommentsCount, FBEmbedPost, FBEmbedVideo, FBLike, FBPage, FBSend, FBShare} from '../src/index';
 
 document.title = 'React Facebook Plugins Dev';
 document.body.style.padding = '30px 40px';
@@ -73,6 +73,10 @@ class Dev extends Component {
             width={750}
             numPosts={5}
             locale="fr_CA"/>
+        </div>
+        <div style={divStyle}>
+          <FBPage appId="253337218049135"
+            href="https://www.facebook.com/facebook"/>
         </div>
       </div>
     );
