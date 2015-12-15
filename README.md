@@ -43,9 +43,10 @@ $ npm install --save facebook-plugins
 - [X] Share
 - [X] Send
 - [X] EmbedPost
-- [ ] EmbedVideo
+- [X] EmbedVideo
 - [ ] Page
-- [ ] Comments
+- [X] Comments
+- [X] CommentsCount
 - [ ] Follow
 
 ## License

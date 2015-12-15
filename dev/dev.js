@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import {FBEmbedPost, FBLike, FBSend, FBShare} from '../src/index';
+import {FBComments, FBCommentsCount, FBEmbedPost, FBEmbedVideo, FBLike, FBSend, FBShare} from '../src/index';
 
 document.title = 'React Facebook Plugins Dev';
 document.body.style.padding = '30px 40px';
@@ -52,6 +52,26 @@ class Dev extends Component {
           <FBEmbedPost appId="253337218049135"
             href="https://www.facebook.com/20531316728/posts/10154009990506729/"
             width={750}
+            locale="fr_CA"/>
+        </div>
+        <div style={divStyle}>
+          <FBEmbedVideo appId="253337218049135"
+            href="https://www.facebook.com/facebook/videos/10153231379946729/"
+            width={750}
+            locale="fr_CA"/>
+        </div>
+        <div style={divStyle}>
+          <FBComments appId="253337218049135"
+            href="http://developers.facebook.com/docs/plugins/comments/"
+            width={750}
+            numPosts={5}
+            locale="fr_CA"/>
+        </div>
+        <div style={divStyle}>
+          <FBCommentsCount appId="253337218049135"
+            href="http://developers.facebook.com/docs/plugins/comments/"
+            width={750}
+            numPosts={5}
             locale="fr_CA"/>
         </div>
       </div>
