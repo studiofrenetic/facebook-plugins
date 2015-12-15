@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import FacebookPlugins from '../src/index';
+import {FBLike, FBShare} from '../src/index';
 
 document.title = 'React Facebook Plugins Dev';
 document.body.style.padding = '30px 40px';
@@ -22,10 +22,23 @@ document.body.innerHTML = `
 
 class Dev extends Component {
   render() {
-    console.log(FacebookPlugins);
     return (
       <div>
-        test
+        <div>
+          <FBLike appId="253337218049135"
+            href="http://facebook.com"
+            action="like"
+            layout="button_count"
+            locale="fr_CA"
+            share={false}
+            showFaces={false}/>
+        </div>
+        <div>
+          <FBShare appId="253337218049135"
+            href="http://facebook.com"
+            layout="box_count"
+            locale="fr_CA"/>
+        </div>
       </div>
     );
   }
