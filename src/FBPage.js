@@ -12,7 +12,7 @@ export default class FBPage extends Component {
     locale: PropTypes.string,
     showFacepile: PropTypes.bool,
     smallHeader: PropTypes.bool,
-    tabs: PropTypes.arrayOf(PropTypes.number),
+    tabs: PropTypes.arrayOf(PropTypes.string),
     version: PropTypes.string,
     width: PropTypes.number,
     xfbml: PropTypes.bool
