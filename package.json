@@ -1,6 +1,6 @@
 {
   "name": "facebook-plugins",
-  "version": "0.8.1",
+  "version": "1.0.0",
   "description": "Facebook plugins component built with and for ReactJS",
   "author": "Studio Frenetic",
   "main": "./lib/index.js",

@@ -47,7 +47,7 @@ $ npm install --save facebook-plugins
 - [X] Page
 - [X] Comments
 - [X] CommentsCount
-- [ ] Follow
+- [X] Follow
 
 ## License
 
