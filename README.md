@@ -38,6 +38,16 @@ $ npm install --save facebook-plugins
     }
     ```
 
+## Roadmap
+- [X] Like
+- [X] Share
+- [X] Send
+- [ ] EmbedPost
+- [ ] EmbedVideo
+- [ ] Page
+- [ ] Comments
+- [ ] Follow
+
 ## License
 
 [MIT License](http://opensource.org/licenses/MIT)
