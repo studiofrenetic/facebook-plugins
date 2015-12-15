@@ -13,7 +13,17 @@ $ npm install --save facebook-plugins
 1. Import Custom Element:
 
     ```js
-    import {FBLike, FBShare} from 'facebook-plugins';
+    import {
+      FBComments,
+      FBCommentsCount,
+      FBEmbedPost,
+      FBEmbedVideo,
+      FBFollow,
+      FBLike,
+      FBPage,
+      FBSend,
+      FBShare
+    } from 'facebook-plugins';
     ```
 
 2. Start using it!
