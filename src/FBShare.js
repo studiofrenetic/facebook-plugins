@@ -20,6 +20,7 @@ export default class FBShare extends Component {
 
   componentDidMount() {
     const {appId, locale, version, xfbml} = this.props;
+
     window.fbAsyncInit = () => {
       FB.init({ // eslint-disable-line no-undef
         appId: appId,
@@ -42,6 +43,7 @@ export default class FBShare extends Component {
 
   render() {
     const {href, layout} = this.props;
+
     return (
       <span>
         <div id="fb-root"></div>

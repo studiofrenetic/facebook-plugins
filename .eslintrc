@@ -25,7 +25,6 @@
     "quotes": [2, "single"],
     "no-unused-vars": 1,
     "no-undef": 1,
-    "object-curly-spacing": [2, "always"],
 
     // JSX
     "jsx-quotes": 1,
@@ -33,8 +32,6 @@
     // React
     "react/display-name": 0,
     "react/jsx-boolean-value": 1,
-    "react/jsx-closing-bracket-location": 1,
-    "react/jsx-curly-spacing": 1,
     "react/jsx-max-props-per-line": 0,
     "react/jsx-indent-props": 0,
     "react/jsx-no-duplicate-props": 1,
