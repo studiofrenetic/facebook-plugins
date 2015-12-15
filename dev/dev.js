@@ -76,7 +76,8 @@ class Dev extends Component {
         </div>
         <div style={divStyle}>
           <FBPage appId="253337218049135"
-            href="https://www.facebook.com/facebook"/>
+            href="https://www.facebook.com/facebook"
+            tabs={['timeline', 'events', 'messages']}/>
         </div>
       </div>
     );

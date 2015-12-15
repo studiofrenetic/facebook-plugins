@@ -12,7 +12,7 @@ export default class FBPage extends Component {
     locale: PropTypes.string,
     showFacepile: PropTypes.bool,
     smallHeader: PropTypes.bool,
-    tabs: PropTypes.string,
+    tabs: PropTypes.arrayOf(PropTypes.number),
     version: PropTypes.string,
     width: PropTypes.number,
     xfbml: PropTypes.bool
@@ -27,7 +27,7 @@ export default class FBPage extends Component {
     hideCta: false,
     showFacepile: true,
     smallHeader: false,
-    tabs: 'timeline',
+    tabs: ['timeline'],
     version: 'v2.5',
     width: 340,
     xfbml: true
@@ -66,7 +66,7 @@ export default class FBPage extends Component {
           data-width={width}
           data-height={height}
           data-adapt-container-width={adaptContainerWidth}
-          data-tabs={tabs}
+          data-tabs={tabs.join()}
           data-hide-cover={hideCover}
           data-show-facepile={showFacepile}
           data-hide-cta={hideCta}
