@@ -55,6 +55,12 @@ export default class FBPage extends Component {
     }(document, 'script', 'facebook-jssdk'));
   }
 
+  componentDidUpdate() {
+    if (window.FB) {
+      window.FB.XFBML.parse();
+    }
+  }
+
   render() {
     const {adaptContainerWidth, height, hideCover, hideCta, href, showFacepile, smallHeader, tabs, width} = this.props;
 

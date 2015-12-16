@@ -48,6 +48,12 @@ export default class FBFollow extends Component {
     }(document, 'script', 'facebook-jssdk'));
   }
 
+  componentDidUpdate() {
+    if (window.FB) {
+      window.FB.XFBML.parse();
+    }
+  }
+
   render() {
     const {colorScheme, height, href, kidDirectedSite, layout, showFaces, width} = this.props;
     const widthParam = width ? {'data-width': width} : {};

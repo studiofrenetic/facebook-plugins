@@ -45,6 +45,12 @@ export default class FBSend extends Component {
     }(document, 'script', 'facebook-jssdk'));
   }
 
+  componentDidUpdate() {
+    if (window.FB) {
+      window.FB.XFBML.parse();
+    }
+  }
+
   render() {
     const {colorScheme, href, kidDirectedSite, referal} = this.props;
     const referalParam = referal ? {'data-ref': referal} : {};

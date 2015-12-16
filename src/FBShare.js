@@ -41,6 +41,12 @@ export default class FBShare extends Component {
     }(document, 'script', 'facebook-jssdk'));
   }
 
+  componentDidUpdate() {
+    if (window.FB) {
+      window.FB.XFBML.parse();
+    }
+  }
+
   render() {
     const {href, layout} = this.props;
 

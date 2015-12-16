@@ -47,6 +47,12 @@ export default class FBComments extends Component {
     }(document, 'script', 'facebook-jssdk'));
   }
 
+  componentDidUpdate() {
+    if (window.FB) {
+      window.FB.XFBML.parse();
+    }
+  }
+
   render() {
     const {colorScheme, href, mobile, numPosts, orderBy, width} = this.props;
     const mobileParam = mobile ? {'data-mobile': mobile} : {};

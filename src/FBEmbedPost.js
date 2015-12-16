@@ -40,6 +40,12 @@ export default class FBEmbedPost extends Component {
     }(document, 'script', 'facebook-jssdk'));
   }
 
+  componentDidUpdate() {
+    if (window.FB) {
+      window.FB.XFBML.parse();
+    }
+  }
+
   render() {
     const {href, width} = this.props;
     return (

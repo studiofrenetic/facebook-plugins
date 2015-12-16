@@ -38,6 +38,12 @@ export default class FBCommentsCount extends Component {
     }(document, 'script', 'facebook-jssdk'));
   }
 
+  componentDidUpdate() {
+    if (window.FB) {
+      window.FB.XFBML.parse();
+    }
+  }
+
   render() {
     const {href} = this.props;
     return (

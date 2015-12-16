@@ -51,6 +51,12 @@ export default class FBLike extends Component {
     }(document, 'script', 'facebook-jssdk'));
   }
 
+  componentDidUpdate() {
+    if (window.FB) {
+      window.FB.XFBML.parse();
+    }
+  }
+
   render() {
     const {action, colorScheme, href, kidDirectedSite, layout, share, showFaces, width} = this.props;
     const widthParam = width ? {'data-width': width} : {};
