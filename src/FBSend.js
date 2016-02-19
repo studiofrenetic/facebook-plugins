@@ -42,7 +42,7 @@ export default class FBSend extends Component {
       js = d.createElement(s); js.id = id;
       js.src = `//connect.facebook.net/${locale}/sdk.js`;
       fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
+    })(document, 'script', 'facebook-jssdk');
   }
 
   componentDidUpdate() {
