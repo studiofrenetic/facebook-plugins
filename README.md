@@ -1,5 +1,8 @@
 # Facebook Plugins
 
+## Original Package
+this package is a fork of [studiofrenetic/facebook-plugins] (https://github.com/studiofrenetic/facebook-plugins)
+
 ## Install
 
 Install the component using [NPM](https://www.npmjs.com/):
@@ -36,6 +39,7 @@ $ npm install --save facebook-plugins
             href="http://facebook.com"
             action="like"
             layout="button_count"
+			size="small"
             locale="fr_CA"
             share={false}
             showFaces={false}/>
