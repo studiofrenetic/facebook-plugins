@@ -14,7 +14,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/studiofrenetic/facebook-plugins"
+    "url": "https://github.com/ynaxon/facebook-plugins"
   },
   "dependencies": {
     "react-side-effect": "^1.0.2"

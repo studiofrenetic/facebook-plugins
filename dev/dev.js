@@ -35,6 +35,7 @@ class Dev extends Component {
             action="like"
             layout="button_count"
             locale="fr_CA"
+			size="small"
             share={false}
             showFaces={false}/>
         </div>
