@@ -36,6 +36,7 @@ $ npm install --save facebook-plugins
             href="http://facebook.com"
             action="like"
             layout="button_count"
+			size="small"
             locale="fr_CA"
             share={false}
             showFaces={false}/>
