@@ -1,8 +1,5 @@
 # Facebook Plugins
 
-## Original Package
-this package is a fork of [studiofrenetic/facebook-plugins](https://github.com/studiofrenetic/facebook-plugins)
-
 ## Install
 
 Install the component using [NPM](https://www.npmjs.com/):
