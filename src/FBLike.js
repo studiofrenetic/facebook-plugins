@@ -14,7 +14,8 @@ export default class FBLike extends Component {
     showFaces: PropTypes.bool,
     version: PropTypes.string,
     width: PropTypes.number,
-    xfbml: PropTypes.bool
+    xfbml: PropTypes.bool,
+	size: PropTypes.oneOf(['small', 'large'])
   }
 
   static defaultProps = {
@@ -26,7 +27,8 @@ export default class FBLike extends Component {
     share: true,
     showFaces: true,
     version: 'v2.5',
-    xfbml: true
+    xfbml: true,
+	size: 'small'
   }
 
   componentDidMount() {
@@ -58,12 +60,12 @@ export default class FBLike extends Component {
   }
 
   render() {
-    const {action, colorScheme, href, kidDirectedSite, layout, share, showFaces, width} = this.props;
+    const {action, colorScheme, href, kidDirectedSite, layout, share, showFaces, width, size} = this.props;
     const widthParam = width ? {'data-width': width} : {};
     return (
       <span>
         <div id="fb-root"></div>
-        <div className="fb-like" data-href={href} data-colorscheme={colorScheme} data-kid-directed-site={kidDirectedSite} data-layout={layout} data-action={action} data-show-faces={showFaces} data-share={share} {...widthParam}></div>
+        <div className="fb-like" data-href={href} data-colorscheme={colorScheme} data-kid-directed-site={kidDirectedSite} data-layout={layout} data-action={action} data-show-faces={showFaces} data-share={share} data-size={size} {...widthParam}></div>
       </span>
     );
   }
